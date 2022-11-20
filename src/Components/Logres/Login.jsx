@@ -1,10 +1,11 @@
-import Logo from "/public/LogresAssets/img/logo.png";
+// import Logo from "/public/LogresAssets/img/logo.png";
 import "/src/css/Logres.css";
 import axios from "axios";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import RegisterPage from "../../pages/RegisterPage";
 import HomePage from "../../Pages/HomePage";
+import Penanggulangan from "../Penanggulangan/Penanggulangan2";
 
 const Login = () => {
   const cekEmail = localStorage.getItem("account");
@@ -46,16 +47,16 @@ const Login = () => {
           <div className="row">
             <div className="row">
               <div className="col text-center">
-                <img
+                {/* <img
                   src={Logo}
                   alt="logo"
                   width="400rem"
                   className="logo-logres"
-                />
+                /> */}
               </div>
               <div className="col">
                 {cekEmail ? (
-                  <HomePage />
+                  <HomePage/>
                 ) : (
                   <form id="form">
                     <h1 className="text-center">LOGIN</h1>

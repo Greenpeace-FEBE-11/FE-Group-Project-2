@@ -11,8 +11,8 @@ import PenanggulanganPage from './Pages/PenanggulanganPage'
 
 import './css/readmore.css'
 import Testing from './Components/Testing'
-import Login from "./components/Logres/Login";
-import Register from "./components/Logres/Register";
+import Login from "./Components/Logres/Login";
+import Register from "./Components/Logres/Register";
 // import './css/style-penanggulangan.css'
 
 function App() {
