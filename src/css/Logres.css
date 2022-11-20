@@ -73,4 +73,10 @@ form {
   form {
     margin-left: auto;
   }
+  .logo-logres{
+    position: absolute;
+    left: 20%;
+    right: 25%;
+    top: 0%;
+  }
 }

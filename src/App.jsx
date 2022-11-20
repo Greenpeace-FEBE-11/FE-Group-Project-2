@@ -3,18 +3,18 @@ import { Route, Router, Routes } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import Register from "./components/Register";
-import LoginCoba from "./components/LoginCoba"
+import LoginCoba2 from "./components/LoginCoba2"
 
 function App() {
   return (
     <div className="App">
-      <LoginCoba />
+      {/* <LoginCoba2 /> */}
       {/* <Register/> */}
-      {/* <Routes>
-        <Route path="/" element={<LoginPage />} />
+      <Routes>
+        <Route path="/" element={<LoginCoba2 />} />
         <Route path="/register" element={<RegisterPage />} />
 
-      </Routes> */}
+      </Routes>
     </div>
   );
 }
