@@ -87,15 +87,16 @@ const Penanggulangan = () => {
                             <div className="flip-box-back text-center" style={{backgroundColor: "#08B88A"}}>
                                 <div className="inner colo-white">
                                     <h1 className="flip-box-header">Reuse</h1>
-                                    <p id="text-card"/>Memanfaatkan sampah atau limbah atau barang yang sudah tidak dipakai untuk kepentingan 
+                                    <p id="text-card">Memanfaatkan sampah atau limbah atau barang yang sudah tidak dipakai untuk kepentingan 
                                         yang sama dengan peruntukan semula. Contohnya botol minuman dari gelas yang telah diminum isinya, kemudian 
                                         diserahkan lagi ke pengecer.
+                                    </p>
                                 </div>
                             </div>
         
                         </div>
                     </div>
-                    
+            
                     </div>
 
         </div>
