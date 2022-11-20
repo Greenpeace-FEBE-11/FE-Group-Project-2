@@ -32,8 +32,9 @@ function Navbar() {
                         
                         <ul className="dropdown-menu" id='navdd'>
                             <li className="abc"><a className="dropdown-item abc" href="#">Informasi Dampak<br></br>Pencemarah Lingkungan</a></li><hr></hr>
-                            <li className="abc"><a className="dropdown-item abc" href="#">Informasi Pencegahan<br></br>Bencana</a></li><hr></hr>
-                            <li className="abc"><a className="dropdown-item abc" href="penanggulangan.html">Informasi Panggulangan<br></br>Bencana</a></li><hr></hr>
+                            {/* <li className="abc"><a className="dropdown-item abc" href="#">Informasi Pencegahan<br></br>Bencana</a></li><hr></hr> */}
+                            <Link  to={"penanggulangan"} style={{textDecoration: 'none'}}><li className="abc"><a className="dropdown-item abc" href="penanggulangan.html">Informasi Penanggulangan<br></br>Bencana</a></li>
+                            </Link><hr></hr>
                             <li className="abc"><a className="dropdown-item abc" href="#">Artikel Informasi</a></li><hr></hr>
                             <li className="abc"><a className="dropdown-item abc" href="#">Komunitas</a></li>
                         </ul>
@@ -56,7 +57,7 @@ function Navbar() {
                 
                 </ul>
                 <ul className="navbar-nav navmenu1 akun">
-                    <li className="nav-item text-right dropdown "><a className="nav-link navmenu" onclick="logout()">Logout</a></li>
+                    <li className="nav-item text-right dropdown "><a className="nav-link navmenu">Logout</a></li>
                 </ul>   
                     </div>
 

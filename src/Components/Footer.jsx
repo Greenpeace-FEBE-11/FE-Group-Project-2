@@ -2,38 +2,38 @@ import React from 'react'
 
 function Footer() {
   return (
-        <footer class="container-xxl ms-0 row footeredit">
-            <div class="row">
-        <div class="col footertitle">
+        <footer className="container-xxl ms-0 row footeredit">
+            <div className="row">
+        <div className="col footertitle">
             <img src="img/logofix.png" alt="" />
-            <p class="text-white "> VolunteGreen merupakan sebuah website yang dikembangkan oleh beberapa Mahasiswa/i Indonesia yang mengikuti kegiatan Studi Independent di Skilvul dengan membantu mengedukasi masyarakat sekitar bersama Greenpeace</p>
+            <p className="text-white "> VolunteGreen merupakan sebuah website yang dikembangkan oleh beberapa Mahasiswa/i Indonesia yang mengikuti kegiatan Studi Independent di Skilvul dengan membantu mengedukasi masyarakat sekitar bersama Greenpeace</p>
         </div>
     
         
-        <div class="col info">
+        <div className="col info">
             <ul>
             <h5>Information</h5>
 
-            <li><a href="#" class="nav-link p-0 text-white">About Us</a></li>
+            <li><a href="#" className="nav-link p-0 text-white">About Us</a></li>
             </ul>
 
         </div>
 
 
         
-        <div class="col con">
+        <div className="col con">
 
             <ul>
             <h5>Contact Us</h5>
 
-            <li><a href="#" class="nav-link p-0 text-white"> <img src="img/facebook-24x24-721949.png" alt="facebook"/> Facebook</a></li>
-            <li><a href="#" class="nav-link p-0 text-white"> <img src="img/instagram.png" alt="instagram"/> Instagram</a></li>
-            <li><a href="#" class="nav-link p-0 text-white"> <img src="img/youtube-24x24-721990.png" alt="youtube"/> Youtube</a></li>
-            <li><a href="#" class="nav-link p-0 text-white"> <img src="img/tik-tok-logo-33090.png" alt="tiktok" width="24rem"/> Tiktok</a></li>
+            <li><a href="#" className="nav-link p-0 text-white"> <img src="img/facebook-24x24-721949.png" alt="facebook"/> Facebook</a></li>
+            <li><a href="#" className="nav-link p-0 text-white"> <img src="img/instagram.png" alt="instagram"/> Instagram</a></li>
+            <li><a href="#" className="nav-link p-0 text-white"> <img src="img/youtube-24x24-721990.png" alt="youtube"/> Youtube</a></li>
+            <li><a href="#" className="nav-link p-0 text-white"> <img src="img/tik-tok-logo-33090.png" alt="tiktok" width="24rem"/> Tiktok</a></li>
              </ul> 
         </div>
         </div>
-        <h5 class="credit">© 2022 VolunteGreen</h5>
+        <h5 className="credit">© 2022 VolunteGreen</h5>
         </footer>
 
 

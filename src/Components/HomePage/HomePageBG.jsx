@@ -3,7 +3,7 @@ import React from 'react'
 function HomePageBG() {
   return (
         <>
-            <div  class="bg">
+            <div  className="bg">
                 <img src="img/bg1.png"/>
             </div>
         </>
