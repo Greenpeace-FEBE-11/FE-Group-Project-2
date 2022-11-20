@@ -9,29 +9,55 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   // const dataAkun = dataAkun
+const dataAkun =() =>{
+    const dataStorage = JSON.parse(localStorage.getItem("account"));
 
-  const handleEmail = (e) => {
-    setEmail(e.target.value);
-  };
-  const handlePassword = (e) => {
-    setPassword(e.target.value);
-  };
-  const handleBtn = (e) => {
+    if(dataStorage != null){
+        window.location.reload()
+    }
+}
+const handleEmail = (e) => {
+  setEmail(e.target.value);
+};
+const handlePassword = (e) => {
+  setPassword(e.target.value);
+};
+
+async function checkAkun(email,password){
+    const data = await axios("https://63528ae6a9f3f34c37409536.mockapi.io/logres");
+
+    const dataAkun = await data.json;
+    const dataEmail = {
+        id:0,
+        email:""
+    }
+    const hasil = false;
+
+    dataAkun.forEach(element => {
+        if(element.email == email && element.password == password){
+            hasil = true;
+            dataEmail.id = element.id;
+            dataEmail.email = element.email;
+        }
+    });
+
+    if(hasil){
+        
+        localStorage.setItem("account",JSON.stringify(dataEmail));
+
+        window.location.reload()
+        // console.log("berhasil login");
+    }else{
+        alert("Email atau password anda salah!");
+        // console.log("email atau password anda salah!");
+    }
+
+}
+
+const handleBtn = (e) =>{
     e.preventDefault();
-    console.log({ email, password });
-    axios("https://63528ae6a9f3f34c37409536.mockapi.io/logres", {
-      email: email,
-      password: password,
-    })
-      .then((result) => {
-        // if()
-        navigation(`/register`)
-        localStorage.setItem('accoount', result)
-      })
-      .catch((error) => {
-        alert(error,"Error")
-      });
-  };
+    checkAkun(email.value,password.value)
+}
   return (
     <>
      
