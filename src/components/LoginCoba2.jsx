@@ -3,12 +3,15 @@ import "../css/Logres.css";
 import axios from "axios";
 import { useState } from "react";
 import { Link,  useNavigate } from "react-router-dom";
+import RegisterPage from "../pages/RegisterPage";
 
 const Login = () => {
+  const cekEmail=localStorage.getItem("account")
+  const cekPassword=localStorage.getItem("pass")
   const navigation = useNavigate()
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // const dataAkun = dataAkun
+
 
   const handleEmail = (e) => {
     setEmail(e.target.value);
@@ -29,8 +32,10 @@ const Login = () => {
           if(element.email==email&&element.password==password){
             console.log("succes");
             navigation(`/register`)
-          localStorage.setItem('account', email)
-          }          
+          localStorage.setItem("account", email)
+          localStorage.setItem("pass", password)
+          } 
+          // if(localStorage)         
         });
         // if(result.data.email==email&&result.data.password==password){
         //   localStorage.setItem("signUp",result.data.email)
@@ -47,6 +52,8 @@ const Login = () => {
   };
   return (
     <>
+    <div>
+      
      
       <section className="container">
         <div className="row">
@@ -55,6 +62,9 @@ const Login = () => {
             <img src={Logo} alt="logo" width="400rem" className="logo-logres"/>
           </div>
           <div className="col">
+          {
+    cekEmail&&cekPassword?
+    <RegisterPage/>:
             <form id="form">
               <h1 className="text-center">LOGIN</h1>
               <div className="mb-3">
@@ -93,11 +103,13 @@ const Login = () => {
                 <Link to={"/register"} style={{textDecoration:"none"}}>Belum punya akun?</Link>
               </div>
             </form>
+            }
           </div>
         </div>
         </div>
       </section>
-      
+
+      </div>
     </>
   );
 };
