@@ -1,47 +1,49 @@
 import axios from "axios";
 import { useState } from "react";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Logo from "/LogresAssets/img/logo.png";
 
 const Register = () => {
-  const [nama,setNama] = useState("")
-  const [email,setEmail]= useState("")
-  const [password1,setPassword1]= useState("")
-  const [password2,setPassword2]= useState("")
-const  navigation= useNavigate()
+  const [nama, setNama] = useState("");
+  const [email, setEmail] = useState("");
+  const [password1, setPassword1] = useState("");
+  const [password2, setPassword2] = useState("");
+  const navigation = useNavigate();
 
-  const handleNama = (e)=>{
-    setNama(e.target.value)
-  }
-  const handleEmail = (e) =>{
-    setEmail(e.target.value)
-  }
-  const handlePassword1 = (e) =>{
-    setPassword1(e.target.value)
-  }
-  const handlePassword2 = (e) =>{
-    setPassword2(e.target.value)
-  }
-  const handleBtn = (e)=>{
-    e.preventDefault()
-    axios.post('https://63528ae6a9f3f34c37409536.mockapi.io/logres',{
-      nama:nama,
-      email:email,
-      password:password2
-    }).then(result=>{
-      if(password1==password2){
-      navigation(`/`)
-      console.log(result.data);
-      alert("register success")
-      }else{
-        alert("Tolong cek kembali data anda")
-      }
-      
-    }).catch(error=>{
-      console.log(error);
-      alert("error")
-    })
-  }
+  const handleNama = (e) => {
+    setNama(e.target.value);
+  };
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+  };
+  const handlePassword1 = (e) => {
+    setPassword1(e.target.value);
+  };
+  const handlePassword2 = (e) => {
+    setPassword2(e.target.value);
+  };
+  const handleBtn = (e) => {
+    e.preventDefault();
+    axios
+      .post("https://63528ae6a9f3f34c37409536.mockapi.io/logres", {
+        nama: nama,
+        email: email,
+        password: password2,
+      })
+      .then((result) => {
+        if (password1 == password2) {
+          navigation(`/`);
+          console.log(result.data);
+          alert("register success");
+        } else {
+          alert("Tolong cek kembali data anda");
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+        alert("error");
+      });
+  };
   return (
     <>
       <section className="container">
@@ -54,7 +56,13 @@ const  navigation= useNavigate()
               <h1 className="text-center">REGISTER</h1>
               <div className="mb-3">
                 <label className="form-label">Username</label>
-                <input type="text" className="form-control" id="Uname-regis" value={nama} onChange={handleNama}/>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="Uname-regis"
+                  value={nama}
+                  onChange={handleNama}
+                />
               </div>
               <div className="mb-3">
                 <label className="form-label">Email</label>
@@ -63,7 +71,8 @@ const  navigation= useNavigate()
                   className="form-control"
                   id="email-regis"
                   aria-describedby="emailHelp"
-                  value={email} onChange={handleEmail}
+                  value={email}
+                  onChange={handleEmail}
                 />
               </div>
               <div className="mb-3">
@@ -72,18 +81,18 @@ const  navigation= useNavigate()
                   type="password"
                   className="form-control"
                   id="password1-regis"
-                  value={password1} onChange={handlePassword1}
+                  value={password1}
+                  onChange={handlePassword1}
                 />
               </div>
               <div className="mb-3">
-                <label className="form-label">
-                  Re-Enter Password
-                </label>
+                <label className="form-label">Re-Enter Password</label>
                 <input
                   type="password"
                   className="form-control"
                   id="password2-regis"
-                  value={password2} onChange={handlePassword2}
+                  value={password2}
+                  onChange={handlePassword2}
                 />
               </div>
               <div className="text-center d-grid gap-2">
@@ -96,7 +105,9 @@ const  navigation= useNavigate()
                 >
                   Submit
                 </button>
-                <Link to={"/"} style={{textDecoration:"none"}}>Sudah punya akun?</Link>
+                <Link to={"/"} style={{ textDecoration: "none" }}>
+                  Sudah punya akun?
+                </Link>
               </div>
             </form>
           </div>
