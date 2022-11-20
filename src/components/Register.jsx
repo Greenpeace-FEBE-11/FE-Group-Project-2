@@ -1,5 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
+import { Link, Navigate } from "react-router-dom";
+import Logo from "/LogresAssets/img/logo.png";
 
 const Register = () => {
   const [nama,setNama] = useState("")
@@ -16,6 +18,7 @@ const Register = () => {
     setPassword(e.target.value)
   }
   const handleBtn = (e)=>{
+    e.preventDefault()
     axios.post('https://63528ae6a9f3f34c37409536.mockapi.io/logres',{
 
       email:email,
@@ -33,7 +36,7 @@ const Register = () => {
       <section className="container">
         <div className="row">
           <div className="col text-center">
-            <img src="assets/logo.png" alt="logo" width="400rem" />
+            <img src={Logo} alt="logo" width="400rem" className="logo-logres" />
           </div>
           <div className="col">
             <form id="form">
@@ -62,7 +65,7 @@ const Register = () => {
                 />
               </div>
               <div className="mb-3">
-                <label className="form-label" onclick="logout()">
+                <label className="form-label">
                   Re-Enter Password
                 </label>
                 <input
@@ -76,13 +79,13 @@ const Register = () => {
                 <button
                   type="submit"
                   className="btn btn-success"
-                  style="--bs-bg-opacity: .5;"
+                  // style="--bs-bg-opacity: .5;"
                   id="btn-regis"
-                  onclick={handleBtn}
+                  onClick={handleBtn}
                 >
                   Submit
                 </button>
-                {/* <a href="login.html" className="text-dark"><p>Sudah  punya akun?</p></a> */}
+                <Link to={"/"} style={{textDecoration:"none"}}>Sudah punya akun?</Link>
               </div>
             </form>
           </div>

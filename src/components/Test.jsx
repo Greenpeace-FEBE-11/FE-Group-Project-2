@@ -1,4 +1,4 @@
-import "../css/style1.css";
+// import "../css/style1.css";
 import Logo from "../assets/img/logo.png";
 import Bg from "../assets/img/Mountain.jpg";
 const Test = () => {
