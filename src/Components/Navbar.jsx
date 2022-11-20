@@ -1,16 +1,27 @@
 import React from 'react'
 import {Link } from "react-router-dom"
+import { useNavigate } from 'react-router-dom'
 
 
 function Navbar() {
+
+    const navigation = useNavigate();
+
+    const HandleLogout = (e) => {
+        e.preventDefault()
+        localStorage.removeItem("account")
+        // window.location.reload()
+        navigation(`/`)
+    };
+
     return (
         <>
             <nav className="navbar navbar-expand-lg navbg ">
                 <div className="container-fluid pohonkita" >
-                    <img className="logofix" src="img/logofix.png" alt="VolunteGreen" width="150"
+                    <Link to="/dashboard"><img className="logofix" src="img/logofix.png" alt="VolunteGreen" width="150"
                 
                 srcSet="img/logofix.png 300w"
-                sizes="(max-width: 300px) 300px, (max-width: 768px) 768px, 1280px"/>
+                sizes="(max-width: 300px) 300px, (max-width: 768px) 768px, 1280px"/></Link>
                     <button
                         className="navbar-toggler"
                         type="button"
@@ -57,7 +68,7 @@ function Navbar() {
                 
                 </ul>
                 <ul className="navbar-nav navmenu1 akun">
-                    <li className="nav-item text-right dropdown "><a className="nav-link navmenu">Logout</a></li>
+                    <li className="nav-item text-right dropdown "><a className="nav-link navmenu" onClick={HandleLogout}>Logout</a></li>
                 </ul>   
                     </div>
 
