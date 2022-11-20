@@ -23,8 +23,8 @@ function App() {
       {/* <Testing/> */}
       <Routes>
         <Route path="/" element={<Login/>}/> 
-        <Route path="/" element={<HomePage/>} />
-        <Route path='/penanggulangan' element={<PenanggulanganPage/>}/>
+        <Route path="/dashboard" element={<HomePage/>} />
+        <Route path="/penanggulangan" element={<PenanggulanganPage/>}/>
         <Route path="/register" element={<Register/>}/> 
       </Routes>
       <Footer/>
