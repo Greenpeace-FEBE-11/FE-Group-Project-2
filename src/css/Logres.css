@@ -21,13 +21,13 @@ body {
   /* width: 450px; */
   top: 30%;
 }
-.container {
+/* .container {
   padding-top: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-top: 5rem;
-}
+} */
 form {
   margin-left: 40em;
   display: grid;

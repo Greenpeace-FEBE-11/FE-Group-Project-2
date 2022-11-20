@@ -3,9 +3,7 @@ import "/src/css/Logres.css";
 import axios from "axios";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import RegisterPage from "../../pages/RegisterPage";
 import HomePage from "../../Pages/HomePage";
-import Penanggulangan from "../Penanggulangan/Penanggulangan2";
 
 const Login = () => {
   const cekEmail = localStorage.getItem("account");
