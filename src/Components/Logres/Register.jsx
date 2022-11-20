@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import Logo from "/LogresAssets/img/logo.png";
+import Logo from "/public/LogresAssets/img/logo.png";
 
 const Register = () => {
   const [nama, setNama] = useState("");
