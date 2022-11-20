@@ -18,7 +18,7 @@ function Navbar() {
         <>
             <nav className="navbar navbar-expand-lg navbg ">
                 <div className="container-fluid pohonkita" >
-                    <Link to="/dashboard"><img className="logofix" src="img/logofix.png" alt="VolunteGreen" width="150"
+                    <Link to="/"><img className="logofix" src="img/logofix.png" alt="VolunteGreen" width="150"
                 
                 srcSet="img/logofix.png 300w"
                 sizes="(max-width: 300px) 300px, (max-width: 768px) 768px, 1280px"/></Link>
