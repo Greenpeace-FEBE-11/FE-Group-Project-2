@@ -683,3 +683,69 @@ flex-wrap: wrap;
 /* .penanggulangan2{
     border: ridge;
 } */
+
+#logre{
+    margin: 0;
+    /* border: ridge; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mb-3{
+    font-size: 12px;
+}
+
+.inputdataa{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: center; */
+    /* margin-top: 100px; */
+    
+}
+
+.volunteelore h1{
+    font-size: 30px;
+    /* justify-content: flex-end; */
+    text-align: right;
+    /* margin-right: 400px; */
+    
+    color: white;
+
+}
+
+.formm{
+    border: ridge;
+    display: flex;
+    justify-content: end; 
+    /* margin-left: 20px; */
+}
+
+#logre{
+    background-color: #91df89;
+    background-image: url("./Mountain.jpg");
+    position: relative;
+    /* width: 100%;
+    height: 565px; */
+    /* display: block; */
+    /* background-size: cover !important; */
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    /* width: auto;
+    height: 25%; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.punyaAkun{
+    color: white;
+    border: ridge;
+}
+
+.punyaAkun:hover{
+color: black;
+
+}

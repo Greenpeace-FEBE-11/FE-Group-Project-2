@@ -45,16 +45,23 @@ const Register = () => {
       });
   };
   return (
-    <>
-      <section className="container">
+    <div >
+      
+      <div className="row" id="logre" >
+        <div className="col volunteelore">
+        <h1>VolunteGreen</h1>
+        {/* <img id="logre"  src="/LogresAssets/img/Mountain.jpg" /> */}
+        </div>
+
+
+      <div className="col formm " >
+     
+      <section className="container   " style={{display: "flex", zIndex:"2"}}>
         <div className="row">
-          <div className="col text-center">
-            {/* <img src={Logo} alt="logo" width="400rem" className="logo-logres" /> */}
-          </div>
-          <div className="col">
-            <form id="form">
-              <h1 className="text-center">REGISTER</h1>
-              <div className="mb-3">
+          <div className="col ">
+            <form id="form ">
+              <h2 className="text-center">REGISTER</h2>
+              <div className="col">
                 <label className="form-label">Username</label>
                 <input
                   type="text"
@@ -64,7 +71,7 @@ const Register = () => {
                   onChange={handleNama}
                 />
               </div>
-              <div className="mb-3">
+              <div className="col">
                 <label className="form-label">Email</label>
                 <input
                   type="email"
@@ -74,8 +81,9 @@ const Register = () => {
                   value={email}
                   onChange={handleEmail}
                 />
-              </div>
-              <div className="mb-3">
+                </div>
+
+              <div className="col">
                 <label className="form-label">Password</label>
                 <input
                   type="password"
@@ -85,7 +93,7 @@ const Register = () => {
                   onChange={handlePassword1}
                 />
               </div>
-              <div className="mb-3">
+              <div className="col">
                 <label className="form-label">Re-Enter Password</label>
                 <input
                   type="password"
@@ -113,7 +121,9 @@ const Register = () => {
           </div>
         </div>
       </section>
-    </>
+      </div>
+      </div>
+    </div>
   );
 };
 export default Register;

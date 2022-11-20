@@ -5,6 +5,7 @@ import DataFetching1 from "../Components/DataFetching/DataFetching1"
 import DataFetching2 from "../Components/DataFetching/DataFetching2"
 import DataFetching3 from "../Components/DataFetching/DataFetching3"
 import Penanggulangan3 from "../Components/Penanggulangan/Penanggulangan3"
+import Navbar from "../Components/Navbar"
 
 // import '../css/readmore.css'
 // import '../css/style-penanggulangan.css'
@@ -12,7 +13,7 @@ import Penanggulangan3 from "../Components/Penanggulangan/Penanggulangan3"
 const PenanggulanganPage = () => {
     return(
         <div id="penanggulanganpagee">
-        
+            <Navbar/>
             <DataFetching1/>
             <Penanggulangan1/>
             <DataFetching2/>

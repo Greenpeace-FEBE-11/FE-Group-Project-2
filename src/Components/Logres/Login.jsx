@@ -40,10 +40,8 @@ const Login = () => {
   };
   return (
     <>
-      <div>
         <section className="container">
-          <div className="row">
-            <div className="row">
+          <div className="row" id="logre">
               <div className="col text-center">
                 {/* <img
                   src={Logo}
@@ -96,10 +94,8 @@ const Login = () => {
                   </form>
                 )}
               </div>
-            </div>
           </div>
         </section>
-      </div>
     </>
   );
 };
