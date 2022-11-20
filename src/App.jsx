@@ -22,10 +22,10 @@ function App() {
       <Navbar/>
       {/* <Testing/> */}
       <Routes>
-      {/* <Route path="/" element={<Login/>}/> */}
+        <Route path="/" element={<Login/>}/> 
         <Route path="/" element={<HomePage/>} />
         <Route path='/penanggulangan' element={<PenanggulanganPage/>}/>
-        {/* <Route path="/register" element={<Register/>}/> */}
+        <Route path="/register" element={<Register/>}/> 
       </Routes>
       <Footer/>
     </>
