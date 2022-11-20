@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 // import Logo from "/public/LogresAssets/img/logo.png";
+// import gunung from "./Mountain.jpg"
 
 const Register = () => {
   const [nama, setNama] = useState("");
@@ -47,7 +48,7 @@ const Register = () => {
   return (
     <div >
       
-      <div className="row" id="logre" >
+      <div className="row" id="logre">
         <div className="col volunteelore">
         <h1>VolunteGreen</h1>
         {/* <img id="logre"  src="/LogresAssets/img/Mountain.jpg" /> */}
