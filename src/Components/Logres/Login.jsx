@@ -1,4 +1,4 @@
-import Logo from "/LogresAssets/img/logo.png";
+import Logo from "/public/LogresAssets/img/logo.png";
 import "/src/css/Logres.css";
 import axios from "axios";
 import { useState } from "react";
