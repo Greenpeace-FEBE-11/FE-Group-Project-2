@@ -1,7 +1,7 @@
 // import Logo from "/public/LogresAssets/img/logo.png";
 import "/src/css/Logres.css";
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import HomePage from "../../Pages/HomePage";
 
@@ -11,6 +11,14 @@ const Login = () => {
   const navigation = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  useEffect(()=>{
+    if(cekEmail){
+      navigation(`/dashboard`)
+    }else{
+      navigation(`/`)
+    }
+  },[cekEmail])
 
   const handleEmail = (e) => {
     setEmail(e.target.value);
@@ -31,6 +39,8 @@ const Login = () => {
             console.log("succes");
             navigation(`/dashboard`);
             localStorage.setItem("account", email);
+          }else{
+            alert("masukkan password dan email anda")
           }
         });
       })
@@ -38,6 +48,7 @@ const Login = () => {
         alert(error, "Error");
       });
   };
+  
   return (
     <>
         <section className="container">
