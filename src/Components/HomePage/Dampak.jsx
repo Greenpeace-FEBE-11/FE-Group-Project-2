@@ -40,7 +40,7 @@ function Dampak() {
                 
                 <div className="profile-content">
                         <div className="profile-name">Hutan</div>                      
-                        <div className="profile-description">"Pengaruh Perubahan Iklim Terhadap Hutan – Perubahan iklim merupakan salah satu fenomena yang kini..."</div>
+                        <div className="profile-description">"Pengaruh Perubahan Iklim Terhadap Hutan – Perubahan iklim merupakan salah satu..."</div>
                         {/* <div className="col-3 text-center profile-overview readmorepencegahan"><a style={{color: "white"}}>Read More</a></div> */}
                 </div>
                 

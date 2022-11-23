@@ -723,6 +723,11 @@ flex-wrap: wrap;
     /* margin-left: 20px; */
 }
 
+
+
+#HomePagee{
+    padding-bottom: 100px;
+}
 #logre{
     background-color: #91df89;
     background-image: url('../public/Mountain.jpg');
