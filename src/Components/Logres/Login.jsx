@@ -40,7 +40,7 @@ const Login = () => {
         result.data.forEach((element) => {
           if (element.email == email && element.password == password) {
             console.log("succes");
-            navigation(`/dashboard`);
+            navigation(`/`);
             localStorage.setItem("account", email);
           }
         });
