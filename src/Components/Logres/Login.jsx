@@ -34,13 +34,14 @@ const Login = () => {
       password: password,
     })
       .then((result) => {
+        if(email==""&& password==""){
+          alert("masukkan email anda");
+        }
         result.data.forEach((element) => {
           if (element.email == email && element.password == password) {
             console.log("succes");
             navigation(`/dashboard`);
             localStorage.setItem("account", email);
-          }else{
-            alert("masukkan password dan email anda")
           }
         });
       })
