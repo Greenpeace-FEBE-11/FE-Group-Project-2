@@ -7,13 +7,14 @@ import HomePage from "../../Pages/HomePage";
 
 const Login = () => {
   const cekEmail = localStorage.getItem("account");
+  const cekPassword = localStorage.getItem("pass");
 
   const navigation = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   useEffect(()=>{
-    if(cekEmail){
+    if(cekEmail&&cekPassword){
       navigation(`/dashboard`)
     }else{
       navigation(`/`)
@@ -29,19 +30,20 @@ const Login = () => {
   const handleBtn = (e) => {
     e.preventDefault();
     console.log({ email, password });
-    axios("https://63528ae6a9f3f34c37409536.mockapi.io/logres", {
+    axios.get("https://63528ae6a9f3f34c37409536.mockapi.io/logres", {
       email: email,
       password: password,
     })
       .then((result) => {
         if(email==""&& password==""){
-          alert("Masukkan email dan password anda");
+          alert("masukkan email dan password anda");
         }
         result.data.forEach((element) => {
-          if (element.email == email && element.password == password) {
+          if (element.email === email && element.password === password) {
             console.log("succes");
-            navigation(`/`);
+            navigation(`/dashboard`);
             localStorage.setItem("account", email);
+            localStorage.setItem("pass", password);
           }
         });
       })
