@@ -35,7 +35,7 @@ const Login = () => {
     })
       .then((result) => {
         if(email==""&& password==""){
-          alert("masukkan email anda");
+          alert("Masukkan email anda dan password anda");
         }
         result.data.forEach((element) => {
           if (element.email == email && element.password == password) {
