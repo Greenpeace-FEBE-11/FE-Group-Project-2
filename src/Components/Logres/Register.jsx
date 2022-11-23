@@ -50,14 +50,13 @@ const Register = () => {
       
       <div className="row" id="logre">
         <div className="col volunteelore">
-        <h1>VolunteGreen</h1>
-        {/* <img id="logre"  src="/LogresAssets/img/Mountain.jpg" /> */}
-        </div>
-
+            <h1 style={{textAlign: "center", paddingLeft: "16rem"}}>VolunteGreen</h1>
+            {/* <img id="logre"  src="/LogresAssets/img/Mountain.jpg" /> */}
+            </div>
 
       <div className="col formm " >
      
-      <section className="container   " style={{display: "flex", zIndex:"2"}}>
+      <section className="container-xxl" style={{display: "flex", zIndex:"2"}}>
         <div className="row">
           <div className="col ">
             <form id="form ">
@@ -104,6 +103,7 @@ const Register = () => {
                   onChange={handlePassword2}
                 />
               </div>
+              <br/>
               <div className="text-center d-grid gap-2">
                 <button
                   type="submit"

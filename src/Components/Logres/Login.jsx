@@ -1,16 +1,25 @@
 // import Logo from "/public/LogresAssets/img/logo.png";
 import "/src/css/Logres.css";
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import HomePage from "../../Pages/HomePage";
 
 const Login = () => {
   const cekEmail = localStorage.getItem("account");
+  const cekPassword = localStorage.getItem("pass");
 
   const navigation = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  useEffect(()=>{
+    if(cekEmail&&cekPassword){
+      navigation(`/dashboard`)
+    }else{
+      navigation(`/`)
+    }
+  },[cekEmail])
 
   const handleEmail = (e) => {
     setEmail(e.target.value);
@@ -21,16 +30,20 @@ const Login = () => {
   const handleBtn = (e) => {
     e.preventDefault();
     console.log({ email, password });
-    axios("https://63528ae6a9f3f34c37409536.mockapi.io/logres", {
+    axios.get("https://63528ae6a9f3f34c37409536.mockapi.io/logres", {
       email: email,
       password: password,
     })
       .then((result) => {
+        if(email==""&& password==""){
+          alert("masukkan email dan password anda");
+        }
         result.data.forEach((element) => {
-          if (element.email == email && element.password == password) {
+          if (element.email === email && element.password === password) {
             console.log("succes");
             navigation(`/dashboard`);
             localStorage.setItem("account", email);
+            localStorage.setItem("pass", password);
           }
         });
       })
@@ -38,28 +51,24 @@ const Login = () => {
         alert(error, "Error");
       });
   };
-
-  const [updateFormVisibility, setupdateFormVisibility] = useState(false)
-
+  
   return (
     <>
-        <section className="container">
+        <section className="container-xxxl">
           <div className="row" id="logre">
-              <div className="col text-center">
-                {/* <img
-                  src={Logo}
-                  alt="logo"
-                  width="400rem"
-                  className="logo-logres"
-                /> */}
-              </div>
+          <div className="col volunteelore">
+            <h1 style={{textAlign: "center", paddingLeft: "4.6rem"}}>VolunteGreen</h1>
+            {/* <img id="logre"  src="/LogresAssets/img/Mountain.jpg" /> */}
+            </div>
+
               <div className="col">
                 {cekEmail ? (
                   <HomePage/>
                 ) : (
-                  <form id="form">
+                  <form id="form" style={{paddingLeft: "9rem"}}>
+                    <br/><br/>
                     <h1 className="text-center">LOGIN</h1>
-                    <div className="mb-3">
+                    <div className="col">
                       <label className="form-label">Email</label>
                       <input
                         type="email"
@@ -70,7 +79,7 @@ const Login = () => {
                         onChange={handleEmail}
                       />
                     </div>
-                    <div className="mb-3">
+                    <div className="col">
                       <label className="form-label">Password</label>
                       <input
                         type="password"
@@ -81,6 +90,7 @@ const Login = () => {
                       />
                     </div>
                     <div className="text-center d-grid gap-2">
+                      <br/>
                       <button
                         type="submit"
                         className="btn btn-success"

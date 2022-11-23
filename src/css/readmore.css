@@ -14,10 +14,21 @@ body{
     border: 2px solid rgba(255, 255, 255, 0);
 }
 
-#gambar{
-    padding-left: 2rem;
+#gambarKrisisIklim{
+    padding-top: 2rem;
     padding-right: 2rem;
 }
+
+
+#gambar{
+    padding-left: 6rem;
+    padding-right: 2rem;
+}
+
+/* #titleKrisisIklim{
+    padding-left: 2rem;
+    padding-right: 2rem;
+} */
 
 #ket-gambar{
     font-weight: bolder;
@@ -52,7 +63,7 @@ body{
     border-radius: 20px;
     width: 35rem ;
     height: 20rem;
-    margin-top: 2rem;
+    margin-top: 6em;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     justify-content: center;
@@ -134,13 +145,18 @@ body{
     justify-content: center;
     margin-left: .5rem;
     margin-right: 1.5rem;
+    
 }
 
 
 @media screen and (max-width: 900px){
-    .flip-box-back, .flip-box-front{
-        max-width: 350px;
+    .flip-box-back, .flip-box-front, .geserBang{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 200px;
         align-items: center;
+        margin-right: 100px;
     }
 }
 
@@ -203,7 +219,7 @@ body{
 }
 
 .col p{
-    text-align: center;
+    text-align: justify;
     margin-left: 2rem;
     margin-right: 2rem;
     margin-top: 2rem;
@@ -243,6 +259,15 @@ body{
         }
         #judul2{
             font-size: 35px;
+            margin-top: -40px;
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        /* For mobile phones: */
+
+        #judul2{
+            font-size: 22px;
             margin-top: -40px;
         }
     }
@@ -304,4 +329,20 @@ body{
     font-size: 20px;
     margin-bottom: 4rem;
     text-align: left;
+}
+
+@media only screen and (max-width: 991px){
+    .textPeran p{ 
+        font-size: 2vw;
+        margin: 67px;
+    }
+
+    #menjaga-hutan-isi{
+        font-size: 2vw;
+    }
+
+    .responKotak{
+        width: 40%;
+        /* border: ridge; */
+    }
 }

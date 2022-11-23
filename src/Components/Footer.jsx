@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-        <footer className="container-xxl ms-0 m-0 row footeredit">
+        <footer className="container-xxxl ms-0 m-0 row footeredit">
             <div className="row">
         <div className="col footertitle">
             <img src="img/logofix.png" alt="" />
