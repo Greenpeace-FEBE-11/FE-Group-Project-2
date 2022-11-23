@@ -18,7 +18,7 @@ function Navbar() {
         <>
             <nav className="navbar navbar-expand-lg navbg ">
                 <div className="container-fluid pohonkita" >
-                    <Link to="/"><img className="logofix" src="img/logofix.png" alt="VolunteGreen" width="150"
+                    <Link to="/dashboard"><img className="logofix" src="img/logofix.png" alt="VolunteGreen" width="150"
                 
                 srcSet="img/logofix.png 300w"
                 sizes="(max-width: 300px) 300px, (max-width: 768px) 768px, 1280px"/></Link>
@@ -42,9 +42,9 @@ function Navbar() {
                             <p className="nav-link dropdown-toggle navmenu " id='menuu' role="button" data-bs-toggle="dropdown" >Menu</p>
                         
                         <ul className="dropdown-menu text-center" id='navdd' >
-                            <li className="abc"><a className="dropdown-item abc" href="#">Informasi Dampak<br></br>Pencemarah Lingkungan</a></li><hr></hr>
+                            <Link  to={"/dampak"} style={{textDecoration: 'none'}}><li className="abc"><a className="dropdown-item abc" href="#">Informasi Dampak<br></br>Pencemarah Lingkungan</a></li></Link><hr></hr>
                             {/* <li className="abc"><a className="dropdown-item abc" href="#">Informasi Pencegahan<br></br>Bencana</a></li><hr></hr> */}
-                            <Link  to={"penanggulangan"} style={{textDecoration: 'none'}}><li className="abc"><a className="dropdown-item abc" href="penanggulangan.html">Informasi Penanggulangan<br></br>Bencana</a></li>
+                            <Link  to={"/penanggulangan"} style={{textDecoration: 'none'}}><li className="abc"><a className="dropdown-item abc" href="penanggulangan.html">Informasi Penanggulangan<br></br>Bencana</a></li>
                             </Link><hr></hr>
                             <li className="abc"><a className="dropdown-item abc" href="#">Artikel Informasi</a></li><hr></hr>
                             <li className="abc"><a className="dropdown-item abc" href="#">Komunitas</a></li>

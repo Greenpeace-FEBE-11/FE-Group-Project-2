@@ -13,6 +13,7 @@ import './css/readmore.css'
 import Testing from './Components/Testing'
 import Login from "./Components/Logres/Login";
 import Register from "./Components/Logres/Register";
+import FetchDampak from './Components/Dampak/FetchDampak'
 // import './css/style-penanggulangan.css'
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/" element={<Login/>}/> 
         <Route path="/dashboard" element={<HomePage/>} />
         <Route path="/penanggulangan" element={<PenanggulanganPage/>}/>
+        <Route path="/dampak" element={<FetchDampak/>}/>
         <Route path="/register" element={<Register/>}/> 
       </Routes>
       <Footer/>
