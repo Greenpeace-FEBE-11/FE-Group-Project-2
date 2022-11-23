@@ -29,22 +29,22 @@ function DataFetching1(){
                         <img src={item.img} className="img-fluid me-0" style={{borderRadius: "20px", marginTop: "2rem"}}/>
                     </div>
                     <div className="col-md" id="ket-gambar">
-                        {item.title}
+                        <h1 style={{fontSize: "55px", paddingTop: "1em"}}>{item.title}</h1>
                     </div>
                 </div>
             ))}
 
             {penanggulangan2.map((item, index) => (
-                <div className="container">
-                <div className=" row datfec1b" key={index}>
-                    <div className="col" id="gambar">
-                        <h1>
+                <div className="container" key={index}>
+                <div className=" row datfec1b" >
+                    <div className="col" id="gambarKrisisIklim">
+                        <h1 id="titleKrisisIklim">
                             {item.title}
                         </h1>
                         <br/>
-                        <p>
-                            {item.content}
-                        </p>
+                        <h6 style={{textAlign: "justify"}}>{item.content}</h6>
+                            
+                        
                     </div>
                     <div className="col">
                         <img src={item.img} className="img-fluid" id="gambar2" width={200}/>

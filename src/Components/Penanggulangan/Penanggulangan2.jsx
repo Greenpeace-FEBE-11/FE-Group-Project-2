@@ -22,14 +22,14 @@ const Penanggulangan = () => {
             <div className="box-item col-4" style={{width: "200px"}}>
                 <div className="flip-box">
 
-                    <div className="flip-box-front text-center" style={{backgroundColor: "#91DF89"}}>
+                    <div className="flip-box-front text-center responKotak" style={{backgroundColor: "#91DF89"}}>
                         <div className="inner colo-white">
                             <h1 className="flip-box-header">Recycle</h1>
                             <img src={recycleImg} id="img-3R"/>
                         </div>
                     </div>
                     
-                    <div className="flip-box-back text-center" style={{backgroundColor: "#91DF89"}}>
+                    <div className="flip-box-back text-center responKotak" style={{backgroundColor: "#91DF89"}}>
                         <div className="inner colo-white">
                             <h1 className="flip-box-header">Recycle</h1>
                             <p id="text-card">
@@ -51,14 +51,14 @@ const Penanggulangan = () => {
                 <div className="box-item col4" style={{width: "200px"}}>
                     <div className="flip-box">
     
-                        <div className="flip-box-front text-center" style={{backgroundColor: "#018071"}}>
+                        <div className="flip-box-front text-center responKotak geserBang" style={{backgroundColor: "#018071"}}>
                             <div className="inner colo-white">
                                 <h1 className="flip-box-header">Reduce</h1>
                                 <img src={reduceImg} id="img-3R" style={{width: "300px", paddingLeft: "4rem"}}/>
                             </div>
                         </div>
                         
-                        <div className="flip-box-back text-center" style={{backgroundColor: "#018071"}}>
+                        <div className="flip-box-back text-center responKotak geserBang" style={{backgroundColor: "#018071"}}>
                             <div className="inner colo-white">
                                 <h1 className="flip-box-header">Reduce</h1>
                                 <p id="text-card">Kegiatan manusia yang menyebabkan pencemaran lingkungan antara lain Kegiatan transportasi, industri, penambangan, pertanian dan lain lain..
@@ -77,14 +77,14 @@ const Penanggulangan = () => {
                     <div className="box-item col-4" style={{width: "200px"}}>
                         <div className="flip-box">
         
-                            <div className="flip-box-front text-center" style={{backgroundColor: "#08B88A"}}>
+                            <div className="flip-box-front text-center responKotak geserBang" style={{backgroundColor: "#08B88A"}}>
                                 <div className="inner colo-white">
                                     <h1 className="flip-box-header">Reuse</h1>
                                     <img src={reuseImg} id="img-3R"/>
                                 </div>
                             </div>
                             
-                            <div className="flip-box-back text-center" style={{backgroundColor: "#08B88A"}}>
+                            <div className="flip-box-back text-center responKotak geserBang" style={{backgroundColor: "#08B88A"}}>
                                 <div className="inner colo-white">
                                     <h1 className="flip-box-header">Reuse</h1>
                                     <p id="text-card">Memanfaatkan sampah atau limbah atau barang yang sudah tidak dipakai untuk kepentingan 

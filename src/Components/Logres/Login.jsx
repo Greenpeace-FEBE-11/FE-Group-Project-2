@@ -52,23 +52,21 @@ const Login = () => {
   
   return (
     <>
-        <section className="container">
+        <section className="container-xxxl">
           <div className="row" id="logre">
-              <div className="col text-center">
-                {/* <img
-                  src={Logo}
-                  alt="logo"
-                  width="400rem"
-                  className="logo-logres"
-                /> */}
-              </div>
+          <div className="col volunteelore">
+            <h1 style={{textAlign: "center", paddingLeft: "4.6rem"}}>VolunteGreen</h1>
+            {/* <img id="logre"  src="/LogresAssets/img/Mountain.jpg" /> */}
+            </div>
+
               <div className="col">
                 {cekEmail ? (
                   <HomePage/>
                 ) : (
-                  <form id="form">
+                  <form id="form" style={{paddingLeft: "9rem"}}>
+                    <br/><br/>
                     <h1 className="text-center">LOGIN</h1>
-                    <div className="mb-3">
+                    <div className="col">
                       <label className="form-label">Email</label>
                       <input
                         type="email"
@@ -79,7 +77,7 @@ const Login = () => {
                         onChange={handleEmail}
                       />
                     </div>
-                    <div className="mb-3">
+                    <div className="col">
                       <label className="form-label">Password</label>
                       <input
                         type="password"
@@ -90,6 +88,7 @@ const Login = () => {
                       />
                     </div>
                     <div className="text-center d-grid gap-2">
+                      <br/>
                       <button
                         type="submit"
                         className="btn btn-success"

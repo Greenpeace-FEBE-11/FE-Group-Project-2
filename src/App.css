@@ -567,7 +567,7 @@ color: white;
 .footeredit{
     display: flex;
     padding: 20px;
-    border: ridge;
+    /* border: ridge; */
 }
 
 
