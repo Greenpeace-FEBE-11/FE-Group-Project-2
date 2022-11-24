@@ -61,7 +61,7 @@ const DataAboutUs = () => {
                     </div>
 
                     <div>
-                        <img src="img/AboutUsImgLisa.png" className="imgProfile"/>
+                        <img src="img/AboutUsImgFebri.png" className="imgProfile"/>
                         <h3 className="namaFebri">Febri</h3>
                     </div>
                     
