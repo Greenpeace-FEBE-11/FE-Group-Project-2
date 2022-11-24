@@ -1,11 +1,11 @@
 // import femaleImg from "../../assets/AboutUsImgFemale.png"
 // import maleImg from "../../assets/AboutUsImgMale.png"
-import imgFirdaus from "../../assets/imgAboutUs/AboutUsImgFirdaus.png";
-import imgVania from "../../assets/imgAboutUs/AboutUsImgVania.png";
-import imgIlham from "../../assets/imgAboutUs/AboutUsImgIlham.png";
-import imgLisa from "../../assets/imgAboutUs/AboutUsImgLisa.png";
-import imgRosy from "../../assets/imgAboutUs/AboutUsImgRosy.png";
-import imgFebri from "../../assets/imgAboutUs/AboutUsImgFebri.png";
+// import imgFirdaus from "../../assets/imgAboutUs/AboutUsImgFirdaus.png";
+// import imgVania from "../../assets/imgAboutUs/AboutUsImgVania.png";
+// import imgIlham from "../../assets/imgAboutUs/AboutUsImgIlham.png";
+// import imgLisa from "../../assets/imgAboutUs/AboutUsImgLisa.png";
+// import imgRosy from "../../assets/imgAboutUs/AboutUsImgRosy.png";
+// import imgFebri from "../../assets/imgAboutUs/AboutUsImgFebri.png";
 
 import "./aboutUs.css"
 
@@ -33,17 +33,17 @@ const DataAboutUs = () => {
 
                 <div className="d-flex justify-content-evenly profileAboutUs">
                     <div style={{}}>
-                        <img src={imgFirdaus} className="imgProfile"/>
+                        <img src="img/AboutUsImgFirdaus.png" className="imgProfile"/>
                         <h3 className="namaDaus">Firdaus</h3>
                     </div>
 
                     <div>
-                        <img src={imgVania} className="imgProfile"/>
+                        <img src="img/AboutUsImgVania.png" className="imgProfile"/>
                         <h3 className="namaVania">Vania</h3>
                     </div>
                     
                     <div style={{}}>
-                        <img src={imgIlham} className="imgProfile"/>
+                        <img src="img/AboutUsImgIlham.png" className="imgProfile"/>
                         <h3 className="namaIlham">Ilham</h3>
                     </div>
 
@@ -56,17 +56,17 @@ const DataAboutUs = () => {
 
                 <div className="d-flex justify-content-evenly">
                     <div>
-                        <img src={imgLisa} className="imgProfile"/>
+                        <img src="img/AboutUsImgLisa.png" className="imgProfile"/>
                         <h3 className="namaLisa">Lisa</h3>
                     </div>
 
                     <div>
-                        <img src={imgFebri} className="imgProfile"/>
+                        <img src="img/AboutUsImgLisa.png" className="imgProfile"/>
                         <h3 className="namaFebri">Febri</h3>
                     </div>
                     
                     <div>
-                        <img src={imgRosy} className="imgProfile"/>
+                        <img src="img/AboutUsImgRosy.png" className="imgProfile"/>
                         <h3 className="namaRosy">Rosy</h3>
                     </div>
 
