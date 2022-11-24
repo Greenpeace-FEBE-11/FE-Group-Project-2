@@ -16,7 +16,7 @@ function DataFetching3(){
         <>
 
             {penanggulangan4.map((item, index) => (
-            <div className="container-xxl" style={{backgroundColor: "#018071"}} id="container4">
+            <div className="container-xxxl" style={{backgroundColor: "#018071"}} id="container4">
                 <div className="row" key={index}>
 
                     <div className="col-lg-5" id="gambar-pengendalian">

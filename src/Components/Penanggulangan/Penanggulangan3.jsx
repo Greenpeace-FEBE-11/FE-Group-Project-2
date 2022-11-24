@@ -1,7 +1,7 @@
 const Penanggulangan3 = () => {
     return(
         <>
-            <div className="container-xxl" style={{backgroundColor: "#018071"}} id="container4">
+            <div className="container-xxxl" style={{backgroundColor: "#018071"}} id="container4">
                 <div className="row">
 
                     <div className="col">
