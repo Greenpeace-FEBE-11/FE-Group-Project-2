@@ -14,6 +14,7 @@ import Testing from './Components/Testing'
 import Login from "./Components/Logres/Login";
 import Register from "./Components/Logres/Register";
 import FetchDampak from './Components/Dampak/FetchDampak'
+import AboutUsPage from './Pages/AboutUsPage'
 // import './css/style-penanggulangan.css'
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/penanggulangan" element={<PenanggulanganPage/>}/>
         <Route path="/dampak" element={<FetchDampak/>}/>
         <Route path="/register" element={<Register/>}/> 
+        <Route path="/about" element={<AboutUsPage/>}/>
       </Routes>
       <Footer/>
     </>

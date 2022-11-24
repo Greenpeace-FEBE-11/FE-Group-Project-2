@@ -55,7 +55,7 @@ function Navbar() {
 
              {/* <!-- Menu lainnya------------------------------- --> */}
                     <li className="nav-item dropdown akun">
-                    <Link to={"/abouut"} style={{textDecoration: 'none'}} className="nav-link navmenu">About Us</Link>
+                    <Link to={"/about"} style={{textDecoration: 'none'}} className="nav-link navmenu">About Us</Link>
                 
                     </li>
                     <li className="nav-item dropdown akun">
