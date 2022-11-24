@@ -13,11 +13,12 @@ function HomePage() {
     <div id="HomePagee">
       <Navbar/>
         <HomePageBG/>
-        <PenanggulanganSinopsis/>
+        <FetchDampakSinopsis/>
         <AboutUs/>
         <ContactUs/>
         {/* <Dampak/> */}
-        <FetchDampakSinopsis/>
+        <PenanggulanganSinopsis/>
+
     </div>    
   )
 }

@@ -23,7 +23,7 @@ function FetchHomePage() {
   return (
     <>
     <div className="container penanggulangan">
-    <h3 className="text-center penanggulangantitle">Penanggulangan</h3>
+    <h3 className="text-center penanggulangantitle">Pencegahan</h3>
     <div className="row">
 
       {penanggsi.slice(0,3).map((item, index) => ( 

@@ -23,7 +23,7 @@ function FetchDampakSinopsis() {
   return (
     <>
     <div className="container penanggulangan">
-    <h3 className="text-center penanggulangantitle">Penanggulangan</h3>
+    <h3 className="text-center penanggulangantitle">Dampak</h3>
     <div className="row">
 
       {dampak.slice(3,6).map((item, index) => ( 
