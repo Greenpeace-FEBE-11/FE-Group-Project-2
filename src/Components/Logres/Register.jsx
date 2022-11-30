@@ -23,25 +23,24 @@ const Register = () => {
   const handlePassword2 = (e) => {
     setPassword2(e.target.value);
   };
-  const handleBtn = (e) => {
+ const handleBtn = (e) => {
     e.preventDefault();
-    axios("https://63528ae6a9f3f34c37409536.mockapi.io/logres", {
+    axios
+      .post("https://63528ae6a9f3f34c37409536.mockapi.io/logres", {
         nama: nama,
         email: email,
         password: password2,
       })
       .then((result) => {
-        if (password1 == password2) {
-          axios.post("https://63528ae6a9f3f34c37409536.mockapi.io/logres", {
-            nama: nama,
-            email: email,
-            password: password2,
-          })
+        if ( password2 == "") {
+          alert("Tolong cek kembali data anda")
+          
+        } else if(password1 == password2){
           navigation(`/`);
           console.log(result.data);
           alert("register success");
-        } else if(password1!==password2) {
-          alert("Tolong cek kembali data anda");
+        }else{
+          alert("Tolong cek kembali data anda")
         }
       })
       .catch((error) => {
